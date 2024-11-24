@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F9F9F9;
+    color: #333;
+    line-height: 1.6;
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+header {
+    background-color: #D32F2F;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid #b71c1c;
+    transition: background-color 0.3s ease;
+}
+
+header:hover {
+    background-color: #C2185B; /* Darker red on hover */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+header h1:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+header .emoji {
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+
+.subheader {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.introduction, .ingredients, .instructions, .tips {
+    background-color: #FFF8E1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.introduction:hover, .ingredients:hover, .instructions:hover, .tips:hover {
+    background-color: #FFF3C2; /* Lighter yellow on hover */
+}
+
+h2 {
+    color: #D32F2F;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 15px;
+    text-decoration: underline;
+    animation: slideIn 0.5s ease-out;
+}
+
+ul, ol {
+    color: #555;
+    font-size: 1.1em;
+    margin-left: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #D32F2F;
+    color: white;
+    padding: 15px 20px;
+    font-size: 1em;
+    margin-top: 30px;
+    border-top: 4px solid #b71c1c;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-style: italic;
+}
+
+footer a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animation for h2 elements */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Hover effects for all list items */
+ul li, ol li {
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+ul li:hover, ol li:hover {
+    transform: translateX(10px); /* Slide items to the right on hover */
+    color: #D32F2F; /* Change text color to red */
+}
+
+footer:hover {
+    background-color: #C2185B;
+}
